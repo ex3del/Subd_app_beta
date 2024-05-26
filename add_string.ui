@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>628</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>628</width>
+    <height>456</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNoEditMenu</set>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>611</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>611</width>
+     <height>461</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Добавление записи</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_add_string">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Внести изменеия</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>40</y>
+      <width>458</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLineEdit" name="le_fio">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="tabletTracking">
+        <bool>true</bool>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhHiddenText</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_region">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Дальневосточный</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Восточно-Сибирский</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Западно-Сибирский</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Центральный</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Северо-Западный</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Поволжский</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Уральский</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Центрально-Черноземный</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Северо-Кавказский</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Северный</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Волго-Вятский</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="le_gorod">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="le_grnti">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="le_keywords">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="le_takepart">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="date">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="dateTime">
+        <datetime>
+         <hour>0</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2023</year>
+         <month>1</month>
+         <day>1</day>
+        </datetime>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_oblast">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="locale">
+        <locale language="Russian" country="Russia"/>
+       </property>
+       <item>
+        <property name="text">
+         <string>Приморский край</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Иркутская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Новосибирская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Москва</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Санкт-Петербург</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Волгоградская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Свердловская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Хабаровский край</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Белгородская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Самарская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Красноярский край</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Республика Татарстан</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Московская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Республика Северная Осетия - Алания</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Омская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Челябинская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Территории, находящиеся за пределами РФ</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Пермский край</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Липецкая область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Курская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Республика Алтай</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Кемеровская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Пензенская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Краснодарский край</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Удмуртская Республика</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ивановская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Карачаево-Черкесская Республика</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Воронежская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ростовская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Рязанская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Оренбургская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Тамбовская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ярославская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Тульская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Саратовская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Новгородская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Кабардино-Балкарская Республика</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Орловская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Забайкальский край</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ставропольский край</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Республика Дагестан</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Вологодская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Нижегородская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Республика Карелия</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Алтайский край</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Архангельская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Республика Башкортостан</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Брянская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Владимирская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Республика Бурятия</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Республика Калмыкия</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Тверская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Тюменская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Республика Коми</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Республика Саха (Якутия)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Костромская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Республика Марий Эл</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Курганская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Республика Мордовия</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Кировская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ульяновская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Чеченская Республика</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Амурская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Томская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Чувашская Республика</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Республика Хакасия</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Калужская область</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Калининградская область</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>40</y>
+      <width>121</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>ФИО</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Регион</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Город</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>ГРНТИ</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ключевые слова</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Метка</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Дата</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Область</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

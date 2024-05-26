@@ -1,0 +1,1286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1063</width>
+    <height>672</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1063</width>
+    <height>659</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Данные по проектам</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1061</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>900</width>
+      <height>450</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="table">
+     <attribute name="title">
+      <string>Таблица</string>
+     </attribute>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>991</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>991</width>
+        <height>431</height>
+       </size>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::MultiSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>560</y>
+        <width>711</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="btn_add_string">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Добавление записи</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_edit_string">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Редактирование записи</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_delete_string">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Удаление записи</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>100</y>
+        <width>422</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="filter">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Применить фильтр</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="defilt">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Сбросить фильтр</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ngrup">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Создать группу</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QComboBox" name="reg_fil">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>111</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="maxVisibleItems">
+       <number>10</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="frame">
+       <bool>false</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Дальневосточный</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Восточно-Сибирский</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Западно-Сибирский</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Центральный</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Северо-Западный</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Поволжский</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Уральский</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Центрально-Черноземный</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Северо-Кавказский</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Северный</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Волго-Вятский</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="city_fil">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>1041</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Регион</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Город</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Область</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>ГРНТИ</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Ключевые слова</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Метка</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Дата занесения</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Сефра интересов</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QComboBox" name="obl_fil">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>70</y>
+        <width>101</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Приморский край</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Иркутская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Новосибирская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Москва</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Санкт-Петербург</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Волгоградская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Свердловская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Хабаровский край</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Белгородская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Самарская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Красноярский край</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Республика Татарстан</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Московская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Республика Северная Осетия - Алания</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Омская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Челябинская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Территории, находящиеся за пределами РФ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Пермский край</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Липецкая область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Курская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Республика Алтай</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Кемеровская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Пензенская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Краснодарский край</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Удмуртская Республика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ивановская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Карачаево-Черкесская Республика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Воронежская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ростовская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Рязанская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Оренбургская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Тамбовская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ярославская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Тульская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Саратовская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Новгородская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Кабардино-Балкарская Республика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Орловская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Забайкальский край</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ставропольский край</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Республика Дагестан</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Вологодская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Нижегородская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Республика Карелия</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Алтайский край</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Архангельская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Республика Башкортостан</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Брянская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Владимирская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Республика Бурятия</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Республика Калмыкия</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Тверская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Тюменская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Республика Коми</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Республика Саха (Якутия)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Костромская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Республика Марий Эл</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Курганская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Республика Мордовия</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Кировская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ульяновская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Чеченская Республика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Амурская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Томская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Чувашская Республика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Республика Хакасия</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Калужская область</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Калининградская область</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="grnti_fil">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>70</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="keywr_fil">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>70</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mark_fil">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>70</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="date_fil">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>70</y>
+        <width>110</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="date">
+       <date>
+        <year>2023</year>
+        <month>1</month>
+        <day>7</day>
+       </date>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="rubr_fil">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>70</y>
+        <width>141</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+      <property name="insertPolicy">
+       <enum>QComboBox::NoInsert</enum>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Общественные науки в целом</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Философия</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>История, исторические науки</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Социология</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Демография</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Экономика, экономические науки</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Государство и право, юридические науки</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Политика, политические науки</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Науковедение</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Культура</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Народное образование, педагогика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Психология</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Языкознание</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Литература, литературоведение, народное поэтическое творчество</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Искусство, искусствоведение</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Массовая коммуникация, журналистика, средства массовой информации</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Информатика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Религия, атеизм</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Комплексное изучение отдельных стран и регионов</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Комплексные проблемы общественных наук</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Математика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Кибернетика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Физика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Механика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Химия</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Биология</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Геодезия, картография</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Геофизика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Геология</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>География</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Астрономия</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Общие и комплексные проблемы естественных и точных наук</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Энергетика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Электротехника</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Электроника, радиотехника</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Связь</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Автоматика и телемеханика, вычислительная техника</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Горное дело</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Металлургия</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Машиностроение</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ядерная техника</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Приборостроение</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Полиграфия, репрография, фотокинотехника</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Химическая технология, химическая промышленность</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Биотехнология</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Легкая промышленность</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Пищевая промышленность</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Лесная и деревообрабатывающая промышленность</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Строительство, архитектура</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Сельское и лесное хозяйство</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Рыбное хозяйство</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Водное хозяйство</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Внутренняя торговля, туристско-эскурсионное обслуживание</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Внешняя торговля</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Транспорт</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Жилищно-коммунальное хозяйство, домоводство, бытовое обслуживание</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Медицина и здравоохранение</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Физическая культура и спорт</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Военное дело</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Прочие отрасли народного хозяйства</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Общие и комплексные проблемы технич.и прикл. наук и отраслей экономики</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Организация и управление</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Статистика</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Стандартизация</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Патентное дело, изобретательство, рационализаторство</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Охрана труда</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Охрана окружающей среды, экология человека</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Космические исследования</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Метрология</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="group">
+     <attribute name="title">
+      <string>Группа</string>
+     </attribute>
+     <widget class="QTableView" name="grp_tab">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>1011</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>950</width>
+        <height>431</height>
+       </size>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::MultiSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="card">
+     <attribute name="title">
+      <string>Печать виджета</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1063</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
